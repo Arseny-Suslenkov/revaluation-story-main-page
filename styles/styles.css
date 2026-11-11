@@ -1,0 +1,332 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+blockquote,
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  background-color: #6b88c2;
+  margin: 0 auto;
+  font-family: 'Farro', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header {
+  background-color: #4a618c;
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.header__links-list {
+  list-style-type: circle;
+  display: flex;
+  gap: 50px;
+  padding-left: 20px;
+}
+
+.header__link {
+  color: #fff;
+  font-family: 'SpecialElite', sans-serif;
+}
+
+.header-name {
+  font-family: 'SpecialElite', sans-serif;
+  font-size: 18px;
+}
+
+.cover {
+  padding: 90px 90px 65px 90px;
+  background-image: url(../images/Treesilhouettes1.png);
+  background-repeat: no-repeat;
+  background-color: #c5d1c7;
+  background-size: cover;
+}
+
+.cover__title {
+  font-size: 72px;
+  font-family: 'Monoton', serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.cover__paragraph {
+  padding-right: 25px;
+  text-align: end;
+  padding-top: 20px;
+  text-shadow: 1px 1px 10px #4a618c;
+}
+
+.main_character {
+  display: flex;
+  justify-content: center;
+  padding: 50px 90px 25px;
+  gap: 70px;
+}
+
+.main_character__image {
+  border-radius: 50%;
+  min-width: 320px;
+  height: 320px;
+  position: relative;
+  background-image: url(../images/Yasen.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -7px;
+  display: flex;
+  outline: 3px solid #2b3336;
+}
+
+.image-with-overlay::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(185 209 214 / 0.3);
+  min-width: inherit;
+  width: inherit;
+  height: inherit;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.main_character__title {
+  font-family: 'SpecialElite', sans-serif;
+  align-self: flex-end;
+  padding-bottom: 21px;
+  padding-left: 110px;
+  position: relative;
+  z-index: 2;
+  color: #2b3336;
+  font-size: 32px;
+}
+
+.main_character__description {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.main_character__description-accent {
+  color: #000;
+  font-size: 48px;
+  text-shadow: 1px 1px 10px #fff;
+  font-family: 'SpecialElite', sans-serif;
+}
+
+.chapters {
+  padding: 25px 90px 70px;
+}
+
+.chapters__title {
+  text-align: center;
+  font-family: 'Monoton', serif;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.chapters__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 50px 0;
+  gap: 50px;
+  justify-content: center;
+}
+
+.chapters__list-item {
+  background-color: #b5c4bf;
+  border-radius: 25%;
+  padding: 25px;
+  outline: 3px solid #2b3336;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 350px;
+}
+
+.item__image {
+  width: 255px;
+  background-repeat: no-repeat;
+  height: 255px;
+  background-size: cover;
+  border-radius: 50%;
+  outline: 3px solid #2b3336;
+  position: relative;
+}
+
+.prologue-epilogue-image {
+  background-image: url(../images/prologue_epilogue.jpg);
+}
+
+.caravan-image {
+  background-image: url(../images/caravan.jpg);
+}
+
+.volk-image {
+  background-image: url(../images/volks_secrets.jpg);
+}
+
+.plans-image {
+  background-image: url(../images/knowing_plans.jpg);
+}
+
+.help-image {
+  background-image: url(../images/help_from_skies.jpg);
+}
+
+.fortress-image {
+  background-image: url(../images/nothern_fortress.jpg);
+}
+
+.enemy-image {
+  background-image: url(../images/enemy_of_my_enemy.jpg);
+}
+
+.slavers-image {
+  background-image: url(../images/slavers_city.jpg);
+}
+
+.battle-image {
+  background-image: url(../images/final_battle.jpg);
+  background-position: 0;
+}
+
+.item__title {
+  text-align: center;
+  color: #2b3336;
+  font-size: 32px;
+  padding-top: 15px;
+  font-family: 'SpecialElite', sans-serif;
+}
+
+.item__description {
+  text-align: center;
+  color: #2b3336;
+  text-shadow: 3px 1px 3px #fff;
+}
+
+.footer {
+  background-color: #4a618c;
+  padding: 15px 50px;
+}
+
+.footer-text {
+  font-family: 'SpecialElite', sans-serif;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+.header {
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover {
+  padding: 90px 45px 65px 45px;
+}
+
+.cover__title {
+  font-size: 48px;
+}
+
+.cover__paragraph {
+  padding-right: 5px;
+}
+
+.main_character {
+  flex-wrap: wrap;
+  padding: 25px 25px 25px;
+}
+
+.main_character__description-accent {
+  font-size: 32px;
+}
+
+.chapters {
+  padding: 25px 25px 70px;
+}
+
+.chapters__title {
+  font-size: 36px;
+}
+}
+
+@media (max-width: 450px) {
+
+.header {
+  gap: 5px;
+  padding: 0;
+}
+
+.header__links-list {
+  flex-direction: column;
+  gap: 1px;
+}
+
+.header__link {
+  font-size: 12px;
+}
+
+.header-author,.header-name {
+  font-size: 10px;
+}
+
+.cover {
+  padding: 90px 25px 65px 25px;
+}
+
+.cover__title {
+  font-size: 34px;
+}
+
+.cover__paragraph {
+  padding-right: 1px;
+}
+
+.main_character__image {
+  min-width: 296px;
+  height: 296px;
+}
+
+.main_character__title {
+  padding-left: 100px;
+}
+
+.chapters {
+  padding: 25px 10px 70px;
+}
+
+.chapters__list-item {
+  padding: 9px;
+  min-width: 270px;
+}
+
+.item__title {
+  font-size: 28px;
+}
+}
