@@ -26,7 +26,7 @@ ol {
 body {
   background-color: #6b88c2;
   margin: 0 auto;
-  font-family: 'Farro', sans-serif;
+  font-family: "Farro", sans-serif;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -51,11 +51,11 @@ body {
 
 .header__link {
   color: #fff;
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
 }
 
 .header-name {
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
   font-size: 18px;
 }
 
@@ -69,7 +69,7 @@ body {
 
 .cover__title {
   font-size: 72px;
-  font-family: 'Monoton', serif;
+  font-family: "Monoton", serif;
   font-weight: 400;
   text-align: center;
 }
@@ -84,7 +84,7 @@ body {
 .main_character {
   display: flex;
   justify-content: center;
-  padding: 50px 90px 25px;
+  padding: 50px 145px 25px;
   gap: 70px;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .image-with-overlay::after {
-  content: '';
+  content: "";
   position: absolute;
   background-color: rgb(185 209 214 / 0.3);
   min-width: inherit;
@@ -116,7 +116,7 @@ body {
 }
 
 .main_character__title {
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
   align-self: flex-end;
   padding-bottom: 21px;
   padding-left: 110px;
@@ -135,7 +135,7 @@ body {
   color: #000;
   font-size: 48px;
   text-shadow: 1px 1px 10px #fff;
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
 }
 
 .chapters {
@@ -144,9 +144,10 @@ body {
 
 .chapters__title {
   text-align: center;
-  font-family: 'Monoton', serif;
+  font-family: "Monoton", serif;
   font-weight: 400;
   font-size: 48px;
+  word-spacing: 5px;
 }
 
 .chapters__list {
@@ -158,15 +159,16 @@ body {
   justify-content: center;
 }
 
-.chapters__list-item {
+.chapter-list-link {
   background-color: #b5c4bf;
-  border-radius: 25%;
+  border-radius: 12%;
   padding: 25px;
   outline: 3px solid #2b3336;
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 350px;
+  width: 350px;
+  text-decoration: none;
 }
 
 .item__image {
@@ -221,13 +223,21 @@ body {
   color: #2b3336;
   font-size: 32px;
   padding-top: 15px;
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
 }
 
-.item__description {
-  text-align: center;
+.chapter__content {
   color: #2b3336;
   text-shadow: 3px 1px 3px #fff;
+  background-color: #b5c4bf;
+  border-radius: 25px;
+  padding: 25px;
+  outline: 3px solid #2b3336;
+  margin: 25px;
+  line-height: 150%;
+  font-size: 19px;
+  letter-spacing: 1px;
+  text-indent: 25px;
 }
 
 .footer {
@@ -236,97 +246,97 @@ body {
 }
 
 .footer-text {
-  font-family: 'SpecialElite', sans-serif;
+  font-family: "SpecialElite", sans-serif;
   text-align: center;
 }
 
 @media (max-width: 720px) {
-.header {
-  flex-direction: column;
-  align-items: center;
-}
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.cover {
-  padding: 90px 45px 65px 45px;
-}
+  .cover {
+    padding: 90px 45px 65px 45px;
+  }
 
-.cover__title {
-  font-size: 48px;
-}
+  .cover__title {
+    font-size: 48px;
+  }
 
-.cover__paragraph {
-  padding-right: 5px;
-}
+  .cover__paragraph {
+    padding-right: 5px;
+  }
 
-.main_character {
-  flex-wrap: wrap;
-  padding: 25px 25px 25px;
-}
+  .main_character {
+    flex-wrap: wrap;
+    padding: 25px 25px 25px;
+  }
 
-.main_character__description-accent {
-  font-size: 32px;
-}
+  .main_character__description-accent {
+    font-size: 32px;
+  }
 
-.chapters {
-  padding: 25px 25px 70px;
-}
+  .chapters {
+    padding: 25px 25px 70px;
+  }
 
-.chapters__title {
-  font-size: 36px;
-}
+  .chapters__title {
+    font-size: 36px;
+  }
 }
 
 @media (max-width: 450px) {
+  .header {
+    gap: 5px;
+    padding: 0;
+  }
 
-.header {
-  gap: 5px;
-  padding: 0;
-}
+  .header__links-list {
+    flex-direction: column;
+    gap: 1px;
+  }
 
-.header__links-list {
-  flex-direction: column;
-  gap: 1px;
-}
+  .header__link {
+    font-size: 12px;
+  }
 
-.header__link {
-  font-size: 12px;
-}
+  .header-author,
+  .header-name {
+    font-size: 10px;
+  }
 
-.header-author,.header-name {
-  font-size: 10px;
-}
+  .cover {
+    padding: 90px 25px 65px 25px;
+  }
 
-.cover {
-  padding: 90px 25px 65px 25px;
-}
+  .cover__title {
+    font-size: 34px;
+  }
 
-.cover__title {
-  font-size: 34px;
-}
+  .cover__paragraph {
+    padding-right: 1px;
+  }
 
-.cover__paragraph {
-  padding-right: 1px;
-}
+  .main_character__image {
+    min-width: 296px;
+    height: 296px;
+  }
 
-.main_character__image {
-  min-width: 296px;
-  height: 296px;
-}
+  .main_character__title {
+    padding-left: 100px;
+  }
 
-.main_character__title {
-  padding-left: 100px;
-}
+  .chapters {
+    padding: 25px 10px 70px;
+  }
 
-.chapters {
-  padding: 25px 10px 70px;
-}
+  .chapter-list-link {
+    padding: 9px;
+    max-width: 270px;
+  }
 
-.chapters__list-item {
-  padding: 9px;
-  min-width: 270px;
-}
-
-.item__title {
-  font-size: 28px;
-}
+  .item__title {
+    font-size: 28px;
+  }
 }
